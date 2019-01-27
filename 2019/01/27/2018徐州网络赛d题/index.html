@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/01/27/2018徐州网络赛d题/1536735043475.png">
 <meta property="og:image" content="http://yoursite.com/2019/01/27/2018徐州网络赛d题/1536737592179.png">
-<meta property="og:updated_time" content="2019-01-27T15:01:34.329Z">
+<meta property="og:updated_time" content="2019-01-27T15:35:33.609Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018徐州网络赛d题 Easy Math">
 <meta name="twitter:description" content="2018徐州网络赛d题 Easy Math Topic">
@@ -400,14 +400,16 @@
 <h1 id="Intention"><a href="#Intention" class="headerlink" title="Intention"></a>Intention</h1><p>题意很简单，但却不好做（懂了之后就会觉得很好做，都是套路）毕竟数论题<br>给出莫比乌斯函数定义，求</p>
 <p><font size="5"> $\sum_{i = 1}^m u(i * n)$</font></p>
 <h1 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h1><ul>
-<li>考虑到莫比乌斯函数为积性函数，尝试分析：<font size="5">$\sum_{i = 1}^m u(i <em> n) = \sum_{i = 1}^m u(i) </em> u(n)[gcd(i, n) = 1]$</font></li>
-<li><p>看到[gcd(i, n) = 1] 很开心，马上写反演：<font size="5">$=u(n) <em>\sum_{g | n} \sum_{t = 1}^{\lfloor \frac m t \rfloor} u(t </em> g)<em>\sum_{d | g} u(d)$<br><font size="2">继续化简得<font size="5">$=u(n) </font></font></em> \sum_{d | n} <em> \sum_{t = 1}^{\lfloor \frac m t \rfloor} </em> u(t <em> d) </em> u(d) = u(n)  <em> \sum_{d | n} </em> u(d)<em> \sum_{t = 1}^{\lfloor \frac m t \rfloor} u(t </em> d)$<br><font size="2">令原式子为<font size="5">$G(n, m)$<br><font size="2">则可发现式子为<font size="5">$G(n, m) = u(n) <em> \sum_{d | n} </em> G(d, \lfloor \frac m d \rfloor)$</font></font></font></font></font></p>
+<li>考虑到莫比乌斯函数为积性函数，尝试分析：<script type="math/tex; mode=display">\sum_{i = 1}^m u(i * n)= \sum_{i = 1}^m u(i) * u(n)[gcd(i, n) = 1]</script></li>
+<li><p>看到[gcd(i, n) = 1] 很开心，马上写反演：</p>
+<script type="math/tex; mode=display">=u(n) *\sum_{g | n} \sum_{t = 1}^{\lfloor \frac m t \rfloor} u(t * g)*\sum_{d | g} u(d)</script><p>继续化简得</p>
+<script type="math/tex; mode=display">=u(n) * \sum_{d | n} * \sum_{t = 1}^{\lfloor \frac m t \rfloor} * u(t * d) * u(d) = u(n)  * \sum_{d | n} * u(d)* \sum_{t = 1}^{\lfloor \frac m t \rfloor} u(t * d)</script><p>令原式子为<script type="math/tex">G(n, m)</script><br>则可发现式子为<script type="math/tex">G(n, m) = u(n) * \sum_{d | n} * G(d, \lfloor \frac m d \rfloor)</script></p>
 </li>
-<li><p>然后考虑当u（n） == 0 时，答案为0，当不为 0 时，必然有 $n = p_1 <em> p_2 …</em>p_n$，而n范围为1e12，最多由13个素数相乘得到，于是可以$2^{13}$枚举因子数（一开始化到这里贼开心，都开始敲代码了，然后又觉得没那么简单，就多看一眼，发现复杂度不大对，因为m有1e9。。那时候还没学杜教筛，所以比赛中没能做出来）</p>
+<li><p>然后考虑当u（n） == 0 时，答案为0，当不为 0 时，必然有 <script type="math/tex">n = p_1 * p_2 ...*p_n</script>，而n范围为1e12，最多由13个素数相乘得到，于是可以$2^{13}$枚举因子数（一开始化到这里贼开心，都开始敲代码了，然后又觉得没那么简单，就多看一眼，发现复杂度不大对，因为m有1e9。。那时候还没学杜教筛，所以比赛中没能做出来）</p>
 </li>
-<li>所以继续化简，其实就我的理解，杜教筛不过就是把1的情况拿了出来单独运算罢了，其他照旧，于是有操作：<font size="5">$G(n, m) = u(n) <em> \sum_{d | n} </em> G(d, \lfloor \frac m d \rfloor)$<br>$= u(n) *[\sum_{d|n\&amp;\&amp;d != 1}G(d, \lfloor \frac m d\rfloor) + \sum_{t = 1}^mu(t)]$</font></li>
+<li>所以继续化简，其实就我的理解，杜教筛不过就是把1的情况拿了出来单独运算罢了，其他照旧，于是有操作：<script type="math/tex; mode=display">G(n, m) = u(n) * \sum_{d | n} * G(d, \lfloor \frac m d \rfloor)</script><script type="math/tex; mode=display">= u(n) *[\sum_{d|n\&\&d != 1}G(d, \lfloor \frac m d\rfloor) + \sum_{t = 1}^mu(t)]</script></li>
 <li>发现后面那部分就是经典的杜教筛了，直接做就可以了</li>
-<li>思考复杂度，枚举因子$2^{13}$，后面是$\lfloor \frac m d \rfloor$log减小，考虑dfs树的话，就是深搜log层，每层枚举因子$2^{13}$，然后每个因子计算杜教筛那部分为$O(\lfloor \frac m d \rfloor^{\frac 2 3})$，即$\sum_{d | n} \lfloor \frac m d \rfloor ^ {\frac 2 3}$，因为$\lfloor \frac m d \rfloor^{\frac 2 3}$难算（可能要用积分，不管了，太懒了），因此考虑更广泛的情况m / d，在m / d的情况下为$m <em> log(m)$，类比一下，每层复杂度大约为$O(m^{\frac 2 3} </em> log(m ^{\frac 2 3}))$（yy 一下），然后因为有$log$层，故时间复杂度大概为$O(m^{\frac 2 3} <em> log(m ^{\frac 2 3})</em> log(m))$，事实上复杂度应该更小的，跑起来飞快<blockquote>
+<li>思考复杂度，枚举因子<script type="math/tex">2^{13}</script>，后面是<script type="math/tex">\lfloor \frac m d \rfloor</script>log减小，考虑dfs树的话，就是深搜log层，每层枚举因子<script type="math/tex">2^{13}</script>，然后每个因子计算杜教筛那部分为<script type="math/tex">O(\lfloor \frac m d \rfloor^{\frac 2 3})</script>，即<script type="math/tex">\sum_{d | n} \lfloor \frac m d \rfloor ^ {\frac 2 3}</script>，因为<script type="math/tex">\lfloor \frac m d \rfloor^{\frac 2 3}</script>难算（可能要用积分，不管了，太懒了），因此考虑更广泛的情况m / d，在m / d的情况下为<script type="math/tex">m * log(m)</script>，类比一下，每层复杂度大约为<script type="math/tex">O(m^{\frac 2 3} * log(m ^{\frac 2 3}))</script>（yy 一下），然后因为有<script type="math/tex">log</script>层，故时间复杂度大概为<script type="math/tex">O(m^{\frac 2 3} * log(m ^{\frac 2 3})* log(m))</script>，事实上复杂度应该更小的，跑起来飞快<blockquote>
 <p><img src="/2019/01/27/2018徐州网络赛d题/./1536737592179.png" alt="Alt text"></p>
 </blockquote>
 </li>
