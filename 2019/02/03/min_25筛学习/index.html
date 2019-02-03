@@ -1,0 +1,331 @@
+<!DOCTYPE html><html class="theme-next gemini use-motion" lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#222"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-michael.png?v=5.1.4"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-michael.png?v=5.1.4"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-michael.png?v=5.1.4"><link rel="mask-icon" href="/images/logo-michael.svg?v=5.1.4" color="#222"><meta name="keywords" content="acm,min_25筛,笔记,数论,积性函数,"><meta name="keywords" content="acm,min_25筛,笔记,数论,积性函数"><meta property="og:type" content="article"><meta property="og:title" content="min_25筛学习"><meta property="og:url" content="http://yoursite.com/2019/02/03/min_25筛学习/index.html"><meta property="og:site_name" content="Michael&#39;s Blog"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="http://yoursite.com/2019/02/03/min_25筛学习/987068.jpg"><meta property="og:updated_time" content="2019-02-03T04:51:41.520Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="min_25筛学习"><meta name="twitter:image" content="http://yoursite.com/2019/02/03/min_25筛学习/987068.jpg"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Gemini",version:"5.1.4",sidebar:{position:"left",display:"post",offset:12,b2t:!1,scrollpercent:!1,onmobile:!1},fancybox:!0,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},duoshuo:{userId:"0",author:"Author"},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><link rel="canonical" href="http://yoursite.com/2019/02/03/min_25筛学习/"><title>min_25筛学习 | Michael's Blog</title></head><body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Michael's Blog</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">The field the world. For life and death, for the Body and for the eternal Soul.</p></div><div class="site-nav-toggle"> <button><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br> Home</a></li><li class="menu-item menu-item-excerpts"><a href="/excerpts/" rel="section"><i class="menu-item-icon fa fa-fw fa-bookmark"></i><br> Excerpts</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br> Tags</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br> Archives</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br> Search</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"> <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/03/min_25筛学习/"><span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person"><meta itemprop="name" content="Michael"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar-michael.gif"></span><span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"><meta itemprop="name" content="Michael's Blog"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">min_25筛学习</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">Posted on</span> <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-03T00:57:04+08:00">2019-02-03</time></span> <span class="post-comments-count"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-comment-o"></i></span><a href="/2019/02/03/min_25筛学习/#comments" itemprop="discussionUrl"><span class="post-comments-count gitment-comments-count" data-xid="/2019/02/03/min_25筛学习/" itemprop="commentsCount"></span></a></span><div class="post-wordcount"><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i></span> <span class="post-meta-item-text">Words count in article&#58;</span> <span title="Words count in article">773</span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-clock-o"></i></span> <span class="post-meta-item-text">Reading time &asymp;</span> <span title="Reading time">3</span></div></div></header><div class="post-body" itemprop="articleBody"><p><img src="/2019/02/03/min_25筛学习/./987068.jpg" alt="Alt text"><br><a id="more"></a></p><h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>之前听过min_25筛这个神奇的东西，只知道个大概，不很了解， 又由于最近在刷project euler，对数论方面知识更加来劲了。因此乘着假期空闲，便把min_25筛的资料翻出来学习了一遍，并在这里把学到的知识做一番总结。<br>首先，在这里先给出一些定义以便于后文描述。</p><ul><li>域为正整数集，陪域为复数集的函数被称为数论函数。</li><li>满足<script type="math/tex">f(a * b) = f(a) * f(b)</script>成立当<script type="math/tex">gcd(a, b) = 1</script>的数论函数<script type="math/tex">f(x)</script>称为积性函数</li><li>记积性函数前缀和<script type="math/tex">S(n) = \sum_{i = 1}^{n}f(i)</script>。</li><li>记前缀和素数部分为<script type="math/tex">S_{p}(n) = \sum_{i \in prime}^{n}f(i)</script>，<br>记前缀和合数部分为<script type="math/tex">S_{cn}(n) = \sum_{i \notin prime \cap i != 1}^{n}f(i)</script>。</li><li>记$p_i$表示第$i$个素数，有$p_0 = 2,p_1 = 3…$。</li><li>记$min_i$表示数$i$的最小质因子，$max_i$表示数$i$的最大质因子。</li></ul><h1 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h1><p>首先，我们考虑积性函数前缀和可以如下拆解:</p><script type="math/tex;mode=display">S(n) = S_{p}(n) + S_{cn}(n) + f(1)</script><p>我们这个算法要先计算素数部分，之后通过素数部分快速计算整体答案。</p><h2 id="素数部分"><a href="#素数部分" class="headerlink" title="素数部分"></a>素数部分</h2><h3 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h3><p>我们都学过埃氏筛，回忆一下，我们每次得到一个素数$p$，并将那些大于等于$p^2$的$p$的倍数筛去（因为$p^2$是最小质因子为$p$的最小合数），最后就能筛得范围内的全部素数。<br>效仿这个思路，我们记$g(n, m)$表示积性函数前$n$个函数值中筛去那些最小质因子小于$p_m$的合数之后的和，即</p><script type="math/tex;mode=display">g(n, m) = \sum_{i \in prime || max_i >= p_m}^n f(i)</script><p>由于大多数积性函数$f(x)$在$x \in prime$可以表示为$x^a$的线性组合，因此我们需要解决的就是$f(x) = x ^ a(x \in prime)$的前缀和。<br>定义新函数$f_p(x) = x ^ a$<br>那么初始化$g(n, 0)$，就是将合数和素数都当作素数来计算，相当于埃氏筛初始化$vis$数组，将合数和素数都标记为$0$。即</p><script type="math/tex;mode=display">g(n, 0) = \sum_{i = 1}^n f_p(i) = \sum_{i = 1}^n i ^ a</script><p>（这个前缀和是存在高效算法可以快速计算的，如：拉格朗日插值法——复杂度O（a））<br>然后考虑转移，枚举$p_i$</p><ul><li>当$p_i ^ 2&gt;n$时，有$g(n, i + 1) = g(n, i)$（因为此时已经不存在最小质因子大于等于$p_i$的合数了）</li><li>当$p_i ^2 &lt;= n$时，有<script type="math/tex">g(n, i + 1)= g(n, i) - p_i^a * [g(\lfloor \frac n {p_i} \rfloor, i) - \sum_{j = 0}^{i - 1}p_j^a]</script><br>这里是这样考虑的：我们要筛去以$p_i$为最小质因子的所有合数，这些合数可以表示为<script type="math/tex">u * p_i</script>，又<script type="math/tex">f_p(x) = x ^ a</script>为一个积性函数，那么<script type="math/tex">f_p(u * p_i) = f_p(u) * f_p(p_i)</script>，于是可以将公共因子提出来，得到<script type="math/tex">f_p(p_i) * \sum{f_p(u)}</script>。<br>考虑<script type="math/tex">\sum{f_p(u)}</script>这一块的东西，<script type="math/tex">u</script>不包含小于<script type="math/tex">p_i</script>的质因子，且<script type="math/tex">u <= \lfloor \frac n {p_i} \rfloor</script>。而<script type="math/tex">g(\lfloor \frac n {p_i} \rfloor, i)</script>包含素数和最小质因子大于等于<script type="math/tex">p_i</script>的合数，于是我们还需减去小于<script type="math/tex">p_i</script>的那部分素数就能得到<script type="math/tex">\sum{f_p(u)}</script>了，即<script type="math/tex">g(\lfloor \frac n {p_i} \rfloor, i) - \sum_{j = 0}^{i - 1}p_j^a</script>于是得到如上递推公式。</li></ul><p>通过递推最终我们求得$S_p(n)$</p><h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>由分块思想我们知道，$\lfloor \frac n {p_i} \rfloor$只有$O(\sqrt n)$种取值。<br>证明：</p><ul><li>当$i &lt; \sqrt n$时，$i$有$\sqrt n$个，因此$\lfloor \frac n i \rfloor$最多也有$\sqrt n$个。</li><li>当$\sqrt n &lt;= i &lt; n$时，$\lfloor \frac n i \rfloor &lt;= \sqrt n$，因此最多也有$\sqrt n$个。</li></ul><p>故得证。<br>我们先预处理出这些取值，并初始化。<br>枚举$p_i$到$p_i ^ 2 &lt; n$，然后枚举$O(\sqrt n)$这些取值从大到小做递推更新便可以了。<br>这里的复杂度不是$O(\sqrt n * \sqrt n)$，因为枚举过程对于$g(a, i)$有情况$p_i^2 &gt; a$的限制，所以其实更新时并不是完全更新，下面做一下完整的复杂度分析。</p><h3 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h3><p><strong>定理1</strong>：$n$以内的素数个数有$\pi(n) = \frac n {ln(n)}$。<br><strong>定理2</strong>：对数积分$li(x) = \int_0^n \frac {dx} {ln(x)}$，根据其泰勒展开式$li(x) = \frac x {ln(x)} \sum_{k = 0}^\infty \frac {k!} {(ln x)^k}$可知当x趋近于0时，$li(x)\sim \frac x { ln(x)}$。<br>对于上述的算法，我们对于每一个取值$a$，只有在$p_i^2 &lt;= a$的情况下会做更新，相当于每一个小于等于$\sqrt a$的素数都会有贡献。<br>于是有复杂度为</p><script type="math/tex;mode=display">\sum_{x = 1} ^ {\sqrt n}\pi(x) + \sum_{x = 1} ^ {\sqrt n} \pi(\lfloor \frac n x \rfloor)</script><script type="math/tex;mode=display">= O(\int_1^{\sqrt n}\pi(\lfloor \frac n x \rfloor))</script><script type="math/tex;mode=display">= O(\int_1^{\sqrt n}\frac{\lfloor \frac n x \rfloor}{ln(\lfloor \frac n x \rfloor)}dx)</script><p>令$t = \lfloor \frac n x \rfloor$，则$n^{\frac 1 4} &lt;= t &lt;= n^{\frac 1 2}$，故原式</p><script type="math/tex;mode=display">= O(\int_{n^{\frac 1 4}}^{n^{\frac 1 2}}\frac t {ln(t)} d \frac n {t^2})</script><script type="math/tex;mode=display">= O(\int_{n^{\frac 1 4}}^{n^{\frac 1 2}}\frac {\frac {-2n} {t^2}} {ln(t)} dt)</script><script type="math/tex;mode=display">= O(-2n\int_{n^{\frac 1 4}}^{n^{\frac 1 2}}\frac 1 {ln(\frac 1 t)} d \frac 1 t)</script><p>令$u = \frac 1 t$，有<script type="math/tex">= O(-2n\int_{n^{-\frac 1 2}}^{n^{-\frac 1 4}}\frac 1 {ln(u)} d u)</script><br>根据定理2</p><script type="math/tex;mode=display">= O(-2n[\frac {n^{-\frac 1 4}}{ln({n^{-\frac 1 4}})} - \frac {n^{-\frac 1 2}} {ln(n^{-\frac 1 2})}])</script><script type="math/tex;mode=display">= O(\frac {8n^{\frac 3 4}}{ln(n)} - \frac {4n^{\frac 1 2}} {ln(n)})</script><script type="math/tex;mode=display">= O(\frac {8n^{\frac 3 4}}{ln(n)})</script><p>综上，该算法复杂度为复杂度$O(\frac {8n^{\frac 3 4}}{ln(n)})$，是一个亚线性算法，时空复杂度都算得上优秀。</p><h2 id="整体计算"><a href="#整体计算" class="headerlink" title="整体计算"></a>整体计算</h2><h3 id="推导-1"><a href="#推导-1" class="headerlink" title="推导"></a>推导</h3><p>我们记$G(n, m)$表示所有最小质因子大于等于$p_m$的数的函数值之和。<br>那么可以知道$G(n, 0) + f(1)$就是我们要求的答案<br>那么考虑如何递推$G(n, m)$</p><ul><li>当$p_i &gt; n$时，此时$G(n, i)$为$0$</li><li>当$p_i &lt;= n$时，有<br><script type="math/tex">G(n, i) = f_p(n) - \sum_{j = 0}^{i - 1}f(j) + \sum_{k = i}^{p_k^2<=n}\sum_{e = 1}^{p_k^{e + 1} <= n}[f(p_k^e)*G(\lfloor \frac n {p_k^e} \rfloor, k + 1) + f(p_k^{e + 1})]</script><br>前半部分$f_p(n) - \sum_{j = 0}^{i - 1}f(j)$为前$n$个数里大于等于$p_i$的素数的答案。<br>后半部分$\sum_{k = i}^{p_k^2&lt;=n}\sum_{e = 1}^{p_k^{e + 1} &lt;= n}[f(p_k^e)*G(\lfloor \frac n {p_k^e} \rfloor, k + 1) + f(p_k^{e + 1})]$为暴力枚举每个数的最小质因子的取值以及重复的次数，将合数部分计算进来。</li></ul><h3 id="实现-1"><a href="#实现-1" class="headerlink" title="实现"></a>实现</h3><p>实现直接暴力深搜就可以了。可以dp递推，那样的时间复杂度据说为$O(\frac {n^{\frac 3 4}} {log(n)})$。（然而我并不会）</p><h3 id="复杂度"><a href="#复杂度" class="headerlink" title="复杂度"></a>复杂度</h3><p>在数据小的情况下，直接暴搜的复杂度优于$O(\frac {n^{\frac 3 4}} {log(n)})$，这里不再做详细分析，等下回研究透了再来补上，以及dp递推做法。</p><h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>对于min_25筛这个算法，相比于杜教筛，我个人认为比较好理解。而理解这个算法关键还是要和埃氏筛结合思考，抓住像分块这样的小技巧。<br>花了很多心思在min_25筛这个算法上，因为听得太多次了，加上上次在西安的热身赛上的杜教筛题目没有做出来，所以便想把它钻研透。期间看了很多资料，拓展了许多知识，并不局限于当前算法。</p><h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul><li><a href="https://www.cnblogs.com/zbh2047/p/8552551.html" target="_blank" rel="noopener">一个大佬的blog</a></li><li>《一些特殊的数论函数求和问题》朱震霆</li></ul></div><div><ul class="post-copyright"><li class="post-copyright-author"> <strong>Post author:</strong> Michael</li><li class="post-copyright-link"> <strong>Post link:</strong> <a href="http://yoursite.com/2019/02/03/min_25筛学习/" title="min_25筛学习">http://yoursite.com/2019/02/03/min_25筛学习/</a></li><li class="post-copyright-license"> <strong>Copyright Notice:</strong> All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.</li></ul></div><footer class="post-footer"><div class="post-tags"> <a href="/tags/acm/" rel="tag"># acm</a> <a href="/tags/min-25筛/" rel="tag"># min_25筛</a> <a href="/tags/笔记/" rel="tag"># 笔记</a> <a href="/tags/数论/" rel="tag"># 数论</a> <a href="/tags/积性函数/" rel="tag"># 积性函数</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2019/01/27/2018徐州网络赛d题/" rel="next" title="2018徐州网络赛d题 Easy Math"><i class="fa fa-chevron-left"></i> 2018徐州网络赛d题 Easy Math</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"></div></div></footer></div></article><div class="post-spread"></div></div></div><div class="comments" id="comments"><div id="gitment-container"></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> Table of Contents</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> Overview</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/images/avatar-michael.gif" alt="Michael"><p class="site-author-name" itemprop="name">Michael</p><p class="site-description motion-element" itemprop="description">退役acmer<br>读书，听歌，周游世界</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">4</span> <span class="site-state-item-name">posts</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">13</span> <span class="site-state-item-name">tags</span></a></div></nav><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/michaelwud" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> GitHub</a></span><span class="links-of-author-item"><a href="http://codeforces.com/profile/WDJUST" target="_blank" title="Codeforces"><i class="fa fa-fw fa-bar-chart"></i> Codeforces</a></span></div><div class="links-of-blogroll motion-element links-of-blogroll-block"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-link"></i> Links</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"> <a href="https://me.csdn.net/junior19" title="junior" target="_blank">junior</a></li><li class="links-of-blogroll-item"> <a href="http://www.cnblogs.com/qscqesze/" title="qscqesze" target="_blank">qscqesze</a></li><li class="links-of-blogroll-item"> <a href="https://me.csdn.net/quailty" title="quailty" target="_blank">quailty</a></li><li class="links-of-blogroll-item"> <a href="https://www.cnblogs.com/clrs97/" title="claris" target="_blank">claris</a></li><li class="links-of-blogroll-item"> <a href="http://picks.logdown.com/" title="picks" target="_blank">picks</a></li></ul></div></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分析"><span class="nav-number">2.</span> <span class="nav-text">分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#素数部分"><span class="nav-number">2.1.</span> <span class="nav-text">素数部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#推导"><span class="nav-number">2.1.1.</span> <span class="nav-text">推导</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现"><span class="nav-number">2.1.2.</span> <span class="nav-text">实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复杂度分析"><span class="nav-number">2.1.3.</span> <span class="nav-text">复杂度分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#整体计算"><span class="nav-number">2.2.</span> <span class="nav-text">整体计算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#推导-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">推导</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现-1"><span class="nav-number">2.2.2.</span> <span class="nav-text">实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复杂度"><span class="nav-number">2.2.3.</span> <span class="nav-text">复杂度</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后记"><span class="nav-number">3.</span> <span class="nav-text">后记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文献"><span class="nav-number">4.</span> <span class="nav-text">参考文献</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2019</span><span class="with-love"><i class="fa fa-user"></i></span> <span class="author" itemprop="copyrightHolder">Michael</span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-area-chart"></i></span> <span class="post-meta-item-text">Site words total count&#58;</span> <span title="Site words total count">4.6k</span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div><div id="needsharebutton-float"><span class="btn"><i class="fa fa-share-alt" aria-hidden="true"></i></span></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css"><script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script><style>a.gitment-editor-footer-tip{display:none}.gitment-container.gitment-footer-container{display:none}</style><script type="text/javascript">function renderGitment(){new Gitmint({id:window.location.pathname,owner:"michaelwud",repo:"michaelwud.github.io",lang:navigator.language||navigator.systemLanguage||navigator.userLanguage,oauth:{client_secret:"a0773884c050d85bcfbbd14f94922e9273029763",client_id:"5a4f4806e8de70696078"}}).render("gitment-container")}renderGitment()</script><script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script><link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css"><script src="/lib/needsharebutton/needsharebutton.js"></script><script>flOptions={iconStyle:"box",boxForm:"horizontal",position:"middleRight",networks:"Weibo,Wechat,Douban,QQZone,Twitter,Facebook"},new needShareButton("#needsharebutton-float",flOptions)</script><script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script><script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script><script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html><script type="text/javascript" src="/js/src/clicklove.js"></script>
