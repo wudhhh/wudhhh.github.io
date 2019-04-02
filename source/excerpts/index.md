@@ -19,3 +19,5 @@ date: 2019-01-26 18:00:07
 <font style = "font-family:Microsoft YaHei UI Light;font-size: 18px"><p align = "right">—— 莎士比亚</p></font>
 <font style = "font-family:Microsoft YaHei UI;font-size: 20px">社会好像一根竹竿，分成若干节。一个人的伟大事业，就是爬上比他自己的阶级更高的阶级去，而上面那个阶级则利用一切力量阻止他爬上去。</font>
 <font style = "font-family:Microsoft YaHei UI Light;font-size: 18px"><p align = "right">—— 司汤达</p></font>
+<font style = "font-family:Microsoft YaHei UI;font-size: 20px">那种蓝色比天穹還要深邃邈远，蓝色被掩在一切厚度后面，笼罩在世界的深处。</font>
+<font style = "font-family:Microsoft YaHei UI Light;font-size: 18px"><p align = "right">—— 玛格丽特·杜拉斯《情人》</p></font>
